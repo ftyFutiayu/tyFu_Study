@@ -1,0 +1,44 @@
+
+<vehicle>
+    <x type="float">0.0</x>
+    <y type="float">0.0</y>
+    <yaw type="float">0.0</yaw>
+    <pitch type="float">0.0</pitch>
+    <gear type="int">0</gear>                       <!-- 0-P、1-R、2-N、3-D -->
+    <speed type="int">0</speed>
+    <ts type="string"></ts>
+    <steering type="float">0</steering>
+    <turn_light type="int">0</turn_light>           <!-- 0-default，1-left，2-right -->
+    <high_beam type="int">0</high_beam>
+    <blinker type="int">0</blinker>
+</vehicle>
+
+<map>
+    <boundary type="string"></boundary>             <!-- MapBoundary.type != 2 -->
+    <idm_boundary type="string"></idm_boundary>             <!-- MapBoundary.type != 2 -->
+    <solid type="string"></solid>                   <!-- BOUNDARY_LINE_MARKING_SINGLE_SOLID_LINE = 1 -->
+    <dash type="string"></dash>                     <!-- BOUNDARY_LINE_MARKING_SINGLE_DASH_LINE = 2 -->
+    <short_dash type="string"></short_dash>         <!-- BOUNDARY_LINE_MARKING_SHORT_DASH_LINE = 3   -->
+    <solid_solid type="string"></solid_solid>       <!-- BOUNDARY_LINE_MARKING_DOUBLE_SOLID_LINE = 4 -->
+    <dash_dash type="string"></dash_dash>           <!-- BOUNDARY_LINE_MARKING_DOUBLE_DASH_LINE = 5 -->
+    <solid_dash type="string"></solid_dash>         <!-- BOUNDARY_LINE_MARKING_LEFT_SOLID_AND_RIGHT_DASH = 6 -->
+    <dash_solid type="string"></dash_solid>         <!-- BOUNDARY_LINE_MARKING_RIGHT_SOLID_AND_LEFT_DASH = 7 -->
+    <diversion type="string"></diversion>           <!-- BOUNDARY_LINE_MARKING_DIVERSION_LINE = 8 -->
+
+    <fb_dash type="string"></fb_dash>               
+    <fb_short_dash type="string"></fb_short_dash>   
+    <fb_dash_dash type="string"></fb_dash_dash>     
+    <fb_solid_dash type="string"></fb_solid_dash>   
+    <fb_dash_solid type="string"></fb_dash_solid>
+
+    <stop_line type="string"></stop_line>
+    <cross_walk type="string"></cross_walk>
+    <road_mark type="string"></road_mark>
+    <tradjectory type="string"></tradjectory>
+    <fusion_object type="string"></fusion_object>
+    <traffic_light type="string"></traffic_light>
+</map>
+
+<nzp_state type="int">0</nzp_state>                 <!-- 0-off，1-standby，2-active，3-横向override， 4-纵向override -->
+<cruise_speed type="int">0</cruise_speed>
+<KanziInitFinish type="int" >0</KanziInitFinish>

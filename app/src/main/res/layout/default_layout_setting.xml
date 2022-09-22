@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="@dimen/dimen_300"
+    android:layout_width="@dimen/dimen_400"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/default_layout_textview"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_70"
+        android:text="道路限速偏移"
+        android:textSize="@dimen/dimen_40"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"/>
+
+    <TextView
+        android:id="@+id/default_layout_textview2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50"
+        android:text="相对 -- 绝对"
+        android:textColor="@color/color_008cff"
+        android:textStyle="bold"
+        android:textSize="@dimen/dimen_40"
+        android:gravity="center_horizontal"/>
+
+    <com.example.helloworld.activity.utils.SlideButton
+        android:id="@+id/silde_button"
+        android:layout_width="@dimen/dimen_200"
+        android:layout_height="@dimen/dimen_50"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dimen_20"/>
+
+</LinearLayout>

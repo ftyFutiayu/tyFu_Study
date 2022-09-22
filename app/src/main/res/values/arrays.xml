@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="apples">
+        <item>apple1</item>
+        <item>apple2</item>
+        <item>apple3</item>
+        <item>apple4</item>
+        <item>apple5</item>
+        <item>apple6</item>
+        <item>apple1</item>
+        <item>apple2</item>
+        <item>apple3</item>
+        <item>apple4</item>
+        <item>apple5</item>
+        <item>apple6</item>
+        <item>apple1</item>
+        <item>apple2</item>
+        <item>apple3</item>
+        <item>apple4</item>
+        <item>apple5</item>
+        <item>apple6</item>
+        <item>apple1</item>
+        <item>apple2</item>
+        <item>apple3</item>
+        <item>apple4</item>
+        <item>apple5</item>
+        <item>apple6</item>
+        <item>apple1</item>
+        <item>apple2</item>
+        <item>apple3</item>
+        <item>apple4</item>
+        <item>apple5</item>
+        <item>apple6</item>
+    </string-array>
+
+    <integer-array name="random">
+        <item>46</item>
+        <item>10</item>
+        <item>3</item>
+        <item>7</item>
+        <item>62</item>
+        <item>441</item>
+        <item>43</item>
+        <item>20</item>
+        <item>34</item>
+        <item>75</item>
+        <item>2</item>
+        <item>31</item>
+    </integer-array>
+</resources>

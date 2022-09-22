@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<resources>
+
+    <style name="DiyExitDialog" parent="android:Theme.Dialog">
+        <!--背景颜色 以及 透明程度设置-->
+        <item name="android:windowBackground">@android:color/white</item>
+        <!--是否去除标题-->
+        <item name="windowNoTitle">true</item>
+        <!--是否去除边框-->
+        <item name="android:windowFrame">@null</item>
+        <!--是否浮现Activity上-->
+        <item name="android:windowIsFloating">true</item>
+        <!--是否模糊-->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!--设置最小宽度-->
+        <item name="android:windowMinWidthMajor">@dimen/dimen_500</item>
+    </style>
+</resources>

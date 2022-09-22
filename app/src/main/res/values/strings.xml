@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Android_Study</string>
+    <string name="activity2">second_activity</string>
+    <string name="activity3">third_activity</string>
+    <string name="string_resources">this is from string resources</string>
+    <string name="fragment_test_lifecycle">Test Fragment Lifecycle</string>
+    <string name="fragment_to_demo1">To Fragment Demo1</string>
+    <string name="fragment_to_demo2">To Fragment Demo2</string>
+    <string name="fragment_demo1_intro">Fragment Demo1 : 一个Activity四个Fragment相互切换</string>
+    <string name="fragment_demo2_intro">Fragment与Tag Layout和View page联动</string>
+    <string name="fragment_switch">Switch</string>
+    <string name="fragment_demo1_left">This is left fragment</string>
+    <string name="fragment_demo1_another_left">This is another left fragment</string>
+    <string name="fragment_demo1_right">This is right fragment</string>
+    <string name="fragment_demo1_another_right">This is another right fragment</string>
+
+</resources>

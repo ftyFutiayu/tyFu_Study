@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.helloworld">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.HelloWorld"
+        tools:targetApi="31">
+        <activity
+            android:name=".activity.main.MainActivity"
+            android:exported="true"
+            android:label="Android Study">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.second_activity.SecondActivity"
+            android:exported="false"
+            android:label="@string/activity2">
+            <intent-filter>
+                <action android:name="com.example.activity_test.ACTION_START" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.example.activity_text.MY_CATEGORY" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.activity_launch_mode.LaunchModeActivity"
+            android:exported="false"
+            android:label="Choose One Activity Launch Mode" />
+        <activity
+            android:name=".activity.activity_launch_mode.SingleTopActivity"
+            android:exported="false"
+            android:label="SingleTop Mode"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.activity_launch_mode.SingleTaskActivity"
+            android:exported="false"
+            android:label="SingleTask Mode"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".activity.activity_launch_mode.SingleInstanceActivity"
+            android:exported="false"
+            android:label="SingleInstance Mode"
+            android:launchMode="singleInstance" />
+        <activity
+            android:name=".activity.bottom_sheet.BottomSheetActivity"
+            android:exported="false"
+            android:label="Bottom Sheet Demo" />
+        <activity
+            android:name=".activity.activity_life.TestActivityLifecycle_1"
+            android:exported="false"
+            android:label="Activity Lifecycle Test" />
+        <activity
+            android:name=".activity.activity_life.TestActivityLifecycle_2"
+            android:exported="false"
+            android:label="Activity Lifecycle Test" />
+        <activity
+            android:name=".activity.ui.UIWidgetActivity"
+            android:exported="false"
+            android:label="常用UI控件" />
+        <activity
+            android:name=".activity.ui.SurfaceViewActivity"
+            android:label="Surface view Test"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activity.ui.listview.ListViewActivity"
+            android:exported="false"
+            android:label="List View Test" />
+        <activity
+            android:name=".activity.ui.recycleview.RecycleViewActivity"
+            android:exported="false"
+            android:label="Recycle View Test" />
+        <activity
+            android:name=".activity.layout.LayoutDefaultActivity"
+            android:exported="false"
+            android:label="UI Default Layout" />
+        <activity
+            android:name=".activity.application_resources.ResourcesActivity"
+            android:exported="false"
+            android:label="Application Resources" />
+        <activity
+            android:name=".activity.fragment.FragmentActivity"
+            android:exported="false"
+            android:label="Fragment" />
+        <activity
+            android:name=".activity.fragment.FragmentTestLifecycle"
+            android:exported="false"
+            android:label="Fragment Lifecycle" />
+        <activity
+            android:name=".activity.fragment.demo1.FragmentActivityDemo1"
+            android:exported="false"
+            android:label="Fragment Demo1" />
+        <activity
+            android:name=".activity.fragment.demo2.FragmentActivityDemo2"
+            android:exported="false"
+            android:label="Fragment Demo2" />
+        <activity
+            android:name=".activity.count_down_timer.CountDownTimerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.handler.HandlerPractiseActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.broadcast.BestBroadcastTest"
+            android:exported="false" />
+    </application>
+
+</manifest>

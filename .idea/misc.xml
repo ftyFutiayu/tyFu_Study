@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Android Studio Projects/git_android_study_first_code/first_code_study/app/src/main/res/layout/bottom_sheet_layout.xml" value="0.25407608695652173" />
+        <entry key="..\:/Android Studio Projects/git_android_study_first_code/first_code_study/app/src/main/res/layout/new_layout_res/layout/best_broadcast_test.xml" value="0.34601449275362317" />
+        <entry key="..\:/Android Studio Projects/git_android_study_first_code/first_code_study/app/src/main/res/menu/main.xml" value="0.37083333333333335" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--TextView 显示文本-->
+    <TextView
+        android:id="@+id/text_view_ui_widget"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="This is TextView"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="#48BB31"
+        android:gravity="center"/>
+
+    <!--EditView 编辑文本-->
+    <EditText
+        android:id="@+id/edit_text_ui_widget"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:hint="Type something here"
+        android:gravity="center"
+        android:maxLines="2"/>
+
+    <Button
+        android:id="@+id/button_ui_widget_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_gravity="right"
+        android:textAllCaps="false" />
+
+    <!--ImageView 显示图片-->
+    <ImageView
+        android:id="@+id/image_view_ui_widget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/img_1" />
+
+    <Button
+        android:id="@+id/button_ui_widget_change_pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Change Picture"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_gravity="right"
+        android:textAllCaps="false" />
+
+    <!--ProgressBar 进度条-->
+    <ProgressBar
+        android:id="@+id/progress_bar_ui_widget"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:max="100"/>
+
+
+    <Button
+        android:id="@+id/button_ui_widget_change_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Change Progress Status"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_gravity="right"
+        android:textAllCaps="false"
+        android:maxLines="1"/>
+
+    <Button
+        android:id="@+id/button_ui_widget_alertdialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:maxLines="1"
+        android:text="Show Dialog"
+        android:textAllCaps="false"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button_ui_widget_progress_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Progress Dialog"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_gravity="right"
+        android:textAllCaps="false"
+        android:maxLines="1"/>
+
+    <Button
+        android:id="@+id/button_ui_widget_surface_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Surface View"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_gravity="right"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/button_ui_widget_listview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="List View"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_gravity="right"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/button_ui_widget_recycleview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recycle View"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_gravity="right"
+        android:textAllCaps="false" />
+
+</LinearLayout>

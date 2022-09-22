@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <Button
+        android:id="@+id/btn_textactivity1_to_test_activity_lifecycle_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Go to Test Activity Lifecycle_2"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:layout_gravity="center_horizontal"
+        android:maxLines="1"/>
+
+    <Button
+        android:id="@+id/btn_textactivity1_normal_alertdialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Make A AlertDialog"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:layout_gravity="center_horizontal"
+        android:maxLines="1"/>
+
+    <Button
+        android:id="@+id/btn_textactivity1_toast"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Make A Toast"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:layout_gravity="center_horizontal"
+        android:maxLines="1"/>
+
+    <Button
+        android:id="@+id/btn_exit_app"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Exit App"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:layout_gravity="center_horizontal"
+        android:maxLines="1"/>
+</LinearLayout>

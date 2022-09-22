@@ -1,0 +1,46 @@
+ext {
+    cfgs = [
+            COMPILE_SDK_VERSION: 30,
+            BUILDTOOLS_VERSION : '30.0.3',
+            MIN_SDK_VERSION    : 27,
+            TARGET_SDK_VERSION : 30,
+            VERSION_CODE       : 1,
+            VERSION_NAME       : '1.0'
+    ]
+
+    deps = [
+            appcompat           : 'androidx.appcompat:appcompat:1.2.0',
+            material            : 'com.google.android.material:material:1.2.1',
+            constraintlayout    : 'androidx.constraintlayout:constraintlayout:2.0.1',
+
+            rxjava              : 'io.reactivex.rxjava3:rxjava:3.0.13',
+            rxandroid           : 'io.reactivex.rxjava3:rxandroid:3.0.0',
+
+            gson                : 'com.google.code.gson:gson:2.8.7',
+
+            okhttp              : "com.squareup.okhttp3:okhttp:4.9.1",
+            okhttp_logger       : "com.squareup.okhttp3:logging-interceptor:4.9.1",
+
+            retrofit            : "com.squareup.retrofit2:retrofit:2.9.0",
+            retrofit_gson       : "com.squareup.retrofit2:converter-gson:2.9.0",
+            retrofit_rxjava3    : "com.squareup.retrofit2:adapter-rxjava3:2.9.0",
+
+            mmkv                : "com.tencent:mmkv-static:1.2.8",
+
+            lifecycle_runtime   : "androidx.lifecycle:lifecycle-runtime:2.2.0",
+            lifecycle_java8     : "androidx.lifecycle:lifecycle-common-java8:2.2.0",
+            lifecycle_extensions: "androidx.lifecycle:lifecycle-extensions:2.2.0",
+            lifecycle_viewmodel : "androidx.lifecycle:lifecycle-viewmodel:2.2.0",
+            lifecycle_livedata  : "androidx.lifecycle:lifecycle-livedata:2.2.0",
+
+            timber              : "com.jakewharton.timber:timber:4.7.1",
+
+            protobuf_java       : 'com.google.protobuf:protobuf-java:3.5.1',
+            protoc              : 'com.google.protobuf:protoc:3.5.1',
+
+            glide               : "com.github.bumptech.glide:glide:4.12.0",
+            glide_compiler      : "com.github.bumptech.glide:compiler:4.12.0",
+
+            core                : 'androidx.core:core-ktx:1.0.0'
+    ]
+}

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dimen_500"
+    android:layout_height="@dimen/dimen_200"
+    android:maxWidth="@dimen/dimen_500"
+    android:maxHeight="@dimen/dimen_200"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/diy_exit_dialog_shape">
+
+    <TextView
+        android:id="@+id/diy_exit_dialog_textview"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_100"
+        android:text="是否退出应用"
+        android:textSize="@dimen/dimen_50"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:background="@drawable/popup_title_bg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/diy_exit_dialog_positive"
+        android:layout_marginTop="@dimen/dimen_0"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/diy_exit_dialog_negative"
+        android:layout_width="@dimen/dimen_250"
+        android:layout_height="0dp"
+        android:backgroundTint="@color/teal_700"
+        android:gravity="center"
+        android:text="否"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dimen_50"
+        app:layout_constraintEnd_toStartOf="@+id/diy_exit_dialog_positive"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/diy_exit_dialog_textview" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/diy_exit_dialog_positive"
+        android:layout_width="@dimen/dimen_250"
+        android:layout_height="0dp"
+        android:text="是"
+        android:textSize="@dimen/dimen_50"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:backgroundTint="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/diy_exit_dialog_textview"
+        app:layout_constraintStart_toEndOf="@+id/diy_exit_dialog_negative"
+        app:layout_constraintEnd_toEndOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,71 @@
+一 Hello World
+Context理解、种类、获取方式
+需求：
+两个页面，activity两个、view：btn，布局约束布局，text view
+
+二 ADB：
+需求：
+整理常用ADB命令和用法--文本
+
+三 activity
+需求：
+activity之间跳转、launch mode、生命周期 ：五个activity四种启动模式（demo）
+
+四 Service
+需求：
+启动、生命周期、start和bind区别：demo（启动一个和activiy可以通信的前台服务）
+
+五 BoardcastReceiver
+需求：
+动态注册和静态注册区别、普通广播和本地广播：demo1(用广播做sevice和activity通信方式
+activity点击按钮 service log)、demo2(检测到网络状态变更后打出log)
+
+六 Fragment
+需求：
+和activity区别、使用场景、生命周期、切换Fragment两种方式和区别
+demo1（一个activity、四个页面Fragment互相切换）
+demo2(和view page、tab layout联动)
+
+七 View:
+需求：
+view的绘制流程、三大方法区别，view和viewGroup区别、demo(自定义view:设置面板的相对绝对控件)
+
+八 Layout
+需求：
+学习LinearLayout、RelativeLayout、ConstrainLayout使用方式、场景，demo(参照UI的默认页面)
+
+九 常用view
+需求：
+ListView、RecyclerView、TestView、EditView、Button、imageView，demo（任意页面都涉及到以上view使用）
+
+十 动画
+需求：
+逐帧、补间、属性，demo（使用到属性动画）
+
+十一 事件分发机制
+需求：
+理解事件分发机制、三大方法的区别、demo（activity中有一个view方块，点击变白，再点变黑，可以拖动、拖动不会变颜色）
+
+
+十二 Handler
+Handler主线程创建和子线程创建、深入研究looper、messagequeue等机制、延时实现原理
+demo1(子线程发消息给主线程)
+demo2(使用Handle实现定时器，每五秒log)
+
+十三 多线程
+安卓常见线程池、runnable、启动线程的几种方式、HandleThread
+demo（封装:提供线程库，提供下面三个api
+串行线程池、工作线程池[最大4线程]、主线程）
+
+十四 接口回调
+概念、demo（用接口回调代替广播通讯，做sevice和activity通信）
+
+十五 资源类
+图片、字符串、颜色、尺寸、数组
+demo（使用上述资源）
+
+十六 网络
+Http、TCP、UDP概念,demo（http使用okhttp+retrofit、tcp原生socket、udp实现单播和组播）
+
+
+

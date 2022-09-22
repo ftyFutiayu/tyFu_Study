@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/default_layout_left_image"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toStartOf="@+id/default_layout_right_image"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/default_layout_right_image"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toEndOf="@+id/default_layout_left_image" />
+
+
+    <ImageButton
+        android:id="@+id/default_layout_exit_apa"
+        android:layout_width="@dimen/dimen_80"
+        android:layout_height="@dimen/dimen_80"
+        android:layout_marginStart="@dimen/dimen_59"
+        android:layout_marginTop="@dimen/dimen_80"
+        android:background="@drawable/default_layout_exit_apa_btn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/default_layout_prompting_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="请向前行驶，正在寻找车位"
+        android:textColor="@color/black"
+        android:textSize="@dimen/dimen_34"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@+id/default_layout_left_image"
+        android:layout_marginTop="@dimen/dimen_29"/>
+
+
+    <TextView
+        android:id="@+id/default_layout_speed_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="15 km/h"
+        android:textColor="@color/black"
+        android:textSize="@dimen/dimen_30"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/default_layout_prompting_message"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@+id/default_layout_left_image" />
+
+
+    <EditText
+        android:id="@+id/default_layout_edittext"
+        android:layout_width="@dimen/dimen_500"
+        android:layout_height="@dimen/dimen_100"
+        android:drawableLeft="@drawable/search_60"
+        android:drawableStart="@drawable/search_60"
+        android:background="@color/white"
+        android:drawablePadding="10dp"
+        android:paddingLeft="@dimen/dimen_10"
+        android:hint="请输入目的地"
+        android:textColorHint="@color/color_7f7f7f"
+        app:layout_constraintTop_toTopOf="@+id/default_layout_exit"
+        app:layout_constraintStart_toStartOf="@+id/default_layout_right_image"
+        android:layout_marginStart="@dimen/dimen_60"/>
+
+    <Button
+        android:id="@+id/default_layout_confirm_btn"
+        android:layout_width="@dimen/dimen_500"
+        android:layout_height="@dimen/dimen_80"
+        android:background="@drawable/btn_style_set"
+        android:text="确认"
+        android:textColor="@color/white"
+        android:visibility="invisible"
+        app:layout_constraintTop_toBottomOf="@+id/default_layout_edittext"
+        app:layout_constraintStart_toStartOf="@+id/default_layout_edittext"
+        app:layout_constraintEnd_toEndOf="@+id/default_layout_edittext"
+        android:layout_marginTop="@dimen/dimen_20"/>
+
+    <ImageButton
+        android:id="@+id/default_layout_exit"
+        android:layout_width="@dimen/dimen_80"
+        android:layout_height="@dimen/dimen_80"
+        android:layout_marginTop="@dimen/dimen_80"
+        android:layout_marginEnd="@dimen/dimen_39"
+        android:background="@drawable/default_layout_exit_btn"
+        app:layout_constraintTop_toTopOf="@+id/default_layout_right_image"
+        app:layout_constraintEnd_toEndOf="@id/default_layout_right_image" />
+
+    <ImageButton
+        android:id="@+id/default_layout_setting_btn"
+        android:layout_width="@dimen/dimen_500"
+        android:layout_height="wrap_content"
+        android:background="@drawable/default_layout_setting_btn"
+        app:layout_constraintBottom_toBottomOf="@id/default_layout_right_image"
+        app:layout_constraintStart_toStartOf="@id/default_layout_right_image" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
