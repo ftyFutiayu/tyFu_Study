@@ -33,9 +33,9 @@ public class SlideButton extends View {
     //view默认的高,view默认的宽是高的两倍(单位:dp)
     public static final int VIEW_HEIGHT = 20;
     //椭圆的边框宽度
-    private static final int strokeLineWidth = 3;
+    private static final int STROKE_LINE_WIDTH = 3;
     //圆的边框宽度
-    private static final int circleStrokeWidth = 3;
+    private static final int CIRCLE_STROKE_WIDTH = 3;
 
     //椭圆边框颜色
     private String StrokeLineColor = "#bebfc1";
@@ -256,7 +256,7 @@ public class SlideButton extends View {
         canvas.drawRoundRect(PADDING, PADDING, mWidth - PADDING, mHeight - PADDING, strokeCircleRadius, strokeCircleRadius, mPaint);
 
         //画边框
-        mPaint.setStrokeWidth(strokeLineWidth);
+        mPaint.setStrokeWidth(STROKE_LINE_WIDTH);
         mPaint.setColor(strokeLineColor_int);
         mPaint.setStyle(Paint.Style.STROKE);
         canvas.drawRoundRect(PADDING, PADDING, mWidth - PADDING, mHeight - PADDING, strokeCircleRadius, strokeCircleRadius, mPaint);
@@ -269,7 +269,7 @@ public class SlideButton extends View {
         mPaint.setDither(true);
         float circleRadiusNew = circleRadius;
         if (isBigCircle) {
-            circleRadiusNew -= circleStrokeWidth;
+            circleRadiusNew -= CIRCLE_STROKE_WIDTH;
         }
         if (isChecked) {
             mPaint.setColor(circleChecked_int);
@@ -282,7 +282,7 @@ public class SlideButton extends View {
             //画圆的边
             mPaint.setColor(circleStrokeColor_int);
             mPaint.setStyle(Paint.Style.STROKE);
-            mPaint.setStrokeWidth(circleStrokeWidth);
+            mPaint.setStrokeWidth(CIRCLE_STROKE_WIDTH);
             canvas.drawCircle(circle_x, centerY, circleRadiusNew, mPaint);
         }
     }

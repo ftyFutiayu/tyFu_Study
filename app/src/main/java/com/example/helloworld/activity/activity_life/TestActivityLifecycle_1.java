@@ -25,12 +25,12 @@ public class TestActivityLifecycle_1 extends BaseActivity implements View.OnClic
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_test_lifecycle_layout_1);
         Log.d(TAG, "onCreate: 执行onCreate()方法");
-        Button button_to_test_activity_lifecycle = findViewById(R.id.btn_textactivity1_to_test_activity_lifecycle_2);
-        button_to_test_activity_lifecycle.setOnClickListener(this);
-        Button button_alertdialog = findViewById(R.id.btn_textactivity1_normal_alertdialog);
-        button_alertdialog.setOnClickListener(this);
-        Button button_toast = findViewById(R.id.btn_textactivity1_toast);
-        button_toast.setOnClickListener(this);
+        Button buttonToTestActivityLifecycle = findViewById(R.id.btn_textactivity1_to_test_activity_lifecycle_2);
+        buttonToTestActivityLifecycle.setOnClickListener(this);
+        Button buttonAlertdialog = findViewById(R.id.btn_textactivity1_normal_alertdialog);
+        buttonAlertdialog.setOnClickListener(this);
+        Button buttonToast = findViewById(R.id.btn_textactivity1_toast);
+        buttonToast.setOnClickListener(this);
         Button button_exit = findViewById(R.id.btn_exit_app);
         button_exit.setOnClickListener(this);
     }
@@ -40,7 +40,7 @@ public class TestActivityLifecycle_1 extends BaseActivity implements View.OnClic
         Intent intent;
         switch (view.getId()) {
             case R.id.btn_textactivity1_to_test_activity_lifecycle_2:
-                intent = new Intent(TestActivityLifecycle_1.this, TestActivityLifecycle_2.class);
+                intent = new Intent(TestActivityLifecycle_1.this, TestActivityLifecycle2.class);
                 startActivity(intent);
               break;
             case R.id.btn_textactivity1_normal_alertdialog:

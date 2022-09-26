@@ -39,7 +39,6 @@ public class TestLifecycleRightFragment extends Fragment {
 
     /**
      * Fragment建立视图时调用
-     *
      */
     @Nullable
     @Override
@@ -51,6 +50,7 @@ public class TestLifecycleRightFragment extends Fragment {
 
     /**
      * Activity创建后调用
+     *
      * @param savedInstanceState
      */
     @Override
@@ -62,7 +62,7 @@ public class TestLifecycleRightFragment extends Fragment {
     @Override
     public void onStart() {
         super.onStart();
-        Log.i(TAG, "onStart: " + "--Fragment--"+ "test lifecycle");
+        Log.i(TAG, "onStart: " + "--Fragment--" + "test lifecycle");
     }
 
     @Override

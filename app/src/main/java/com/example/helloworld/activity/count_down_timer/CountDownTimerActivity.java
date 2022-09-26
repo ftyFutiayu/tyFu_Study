@@ -20,8 +20,8 @@ public class CountDownTimerActivity extends AppCompatActivity {
     private Button timeCancel;
     private CountDownTimer countDownTimer;
     private TextView time;
-    private static final long countTimeUnit = 1000L;
-    private static final long totalTime = 5000L;
+    private static final long COUNTTIMEUNIT = 1000L;
+    private static final long TOTALTIME = 5000L;
 
     /**
      * 初始化countDownTimer
@@ -37,7 +37,7 @@ public class CountDownTimerActivity extends AppCompatActivity {
             @Override
             public void onTick(long millisUntilFinished) {
                 //倒计时显示在TextView中
-                time.setText(millisUntilFinished / countTimeUnit + "s");
+                time.setText(millisUntilFinished / COUNTTIMEUNIT + "s");
                 //计时时取消按钮可用
                 timeCancel.setEnabled(true);
             }
@@ -61,7 +61,7 @@ public class CountDownTimerActivity extends AppCompatActivity {
         timeCancel = findViewById(R.id.count_down_time_cancel);
         timeCancel.setEnabled(false);
         //初始化并倒计时
-        initCountDownTimer(totalTime, countTimeUnit);
+        initCountDownTimer(TOTALTIME, COUNTTIMEUNIT);
         timerBtn.setText("开始计时");
     }
 

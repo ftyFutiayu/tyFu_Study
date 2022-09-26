@@ -20,7 +20,7 @@ public class BottomSheetActivity extends BaseActivity implements View.OnClickLis
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.bottom_sheet_layout);
-        Button btnBehavior =  findViewById(R.id.btn_Behavior);
+        Button btnBehavior = findViewById(R.id.btn_Behavior);
         Button btnDialog = findViewById(R.id.btn_Dialog);
         btnBehavior.setOnClickListener(this);
         btnDialog.setOnClickListener(this);

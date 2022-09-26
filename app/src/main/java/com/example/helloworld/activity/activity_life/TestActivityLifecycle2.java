@@ -9,8 +9,8 @@ import com.example.helloworld.activity.base.BaseActivity;
 /**
  * 探究Activity 生命周期
  */
-public class TestActivityLifecycle_2 extends BaseActivity {
-    private static final String TAG = "TestActivityLifecycle_2";
+public class TestActivityLifecycle2 extends BaseActivity {
+    private static final String TAG = "TestActivityLifecycle2";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

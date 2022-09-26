@@ -62,7 +62,7 @@ public class SurfaceViewActivity extends AppCompatActivity implements
         seekBar.setOnSeekBarChangeListener((SeekBar.OnSeekBarChangeListener) this);
         //初始化定时器
         timer = new Timer();
-        timerTask= new TimerTask() {
+        timerTask = new TimerTask() {
             @Override
             public void run() {
                 if (mediaPlayer != null && mediaPlayer.isPlaying()) {
@@ -74,7 +74,7 @@ public class SurfaceViewActivity extends AppCompatActivity implements
                     int progress = mediaPlayer.getCurrentPosition();
                     //进度条当前长度与视频当前长度同步
                     seekBar.setProgress(progress);
-                }else{
+                } else {
                     play.setImageResource(android.R.drawable.ic_media_play);
                 }
             }
@@ -86,6 +86,7 @@ public class SurfaceViewActivity extends AppCompatActivity implements
 
     /**
      * Surface View创建时触发 实现加载视频和播放视频
+     *
      * @param surfaceHolder :surfaceHolder容器
      */
     @Override
@@ -182,6 +183,7 @@ public class SurfaceViewActivity extends AppCompatActivity implements
                     public void onTick(long l) {
                         System.out.println(l);
                     }
+
                     //计时器结束时
                     @Override
                     public void onFinish() {
@@ -206,7 +208,7 @@ public class SurfaceViewActivity extends AppCompatActivity implements
                 if (mediaPlayer != null && mediaPlayer.isPlaying()) {
                     mediaPlayer.pause();
                     play.setImageResource(android.R.drawable.ic_media_play);
-                }else {
+                } else {
                     mediaPlayer.start();
                     play.setImageResource(android.R.drawable.ic_media_pause);
                 }

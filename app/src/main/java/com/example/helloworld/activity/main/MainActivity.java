@@ -35,6 +35,7 @@ public class MainActivity extends BaseActivity {
 
     //按钮名字集合
     private List<String> indexButtonNames;
+    //activity集合
     private static final int SECOND_ACTIVITY = 0;
     private static final int BAI_DU = 1;
     private static final int ACTIVITY_LAUNCH_MODE = 2;

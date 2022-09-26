@@ -2,6 +2,7 @@ package com.example.helloworld.activity.layout;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.widget.AppCompatButton;
+
 import android.annotation.SuppressLint;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
@@ -40,6 +41,7 @@ public class LayoutDefaultActivity extends BaseActivity implements View.OnClickL
     private ImageButton settingBtn; //设置弹窗按钮
     private ImageView imageViewRight; //右图片
     private SlideButton slideButton; //滑动按钮
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -141,7 +143,7 @@ public class LayoutDefaultActivity extends BaseActivity implements View.OnClickL
                         Color.parseColor("#cccccc")); //按钮没有被选中颜色
 
                 //初始化PopWindows 将view传入
-                PopupWindow myPop = new PopupWindow(view, 400,200);
+                PopupWindow myPop = new PopupWindow(view, 400, 200);
                 myPop.setContentView(view);
                 //基本设置
                 myPop.setBackgroundDrawable(new ColorDrawable(0xFFFFFFFF));
@@ -171,8 +173,8 @@ public class LayoutDefaultActivity extends BaseActivity implements View.OnClickL
         View exitDialogView = LayoutInflater.from(this).inflate(R.layout.diy_exit_dialog, null, false);
         //定义自定义dialog对象
         final AlertDialog exitDialog = new AlertDialog.Builder(this, R.style.DiyExitDialog)
-                                            .setView(exitDialogView)
-                                            .create();
+                .setView(exitDialogView)
+                .create();
         //对话框头部出现空白 取消头部试试
         exitDialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
         exitDialog.setContentView(R.layout.diy_exit_dialog);

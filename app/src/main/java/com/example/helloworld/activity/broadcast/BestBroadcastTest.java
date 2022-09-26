@@ -5,7 +5,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.os.Bundle;
-import android.widget.Toast;
 
 import com.example.helloworld.R;
 import com.example.helloworld.activity.base.BaseActivity;
@@ -39,7 +38,8 @@ public class BestBroadcastTest extends BaseActivity {
     static class NetworkChangeReceiver extends BroadcastReceiver {
         @Override
         public void onReceive(Context context, Intent intent) {
-            Toast.makeText(context, "network changes", Toast.LENGTH_SHORT).show();
+//            Toast.makeText(context, "network changes", Toast.LENGTH_SHORT).show();
+
         }
     }
 }

@@ -1,10 +1,5 @@
 package com.example.helloworld.activity.application_resources;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-
-
 import android.content.res.ColorStateList;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -14,9 +9,13 @@ import android.util.TypedValue;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
 import com.example.helloworld.R;
 import com.example.helloworld.activity.application_resources.adapter.ResourcesAdapter;
 import com.example.helloworld.activity.base.BaseActivity;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -24,9 +23,9 @@ import java.util.List;
  * Android应用程序中资源类调用 (字符串、格式、字体、颜色)
  */
 public class ResourcesActivity extends BaseActivity {
-    
+
     private List<String> stringList = new ArrayList<>();
-    
+
     private static final String TAG = "ResourcesActivity";
 
     @Override
@@ -77,7 +76,7 @@ public class ResourcesActivity extends BaseActivity {
         textView1.setTextSize(18);
         textView2.setTextSize(getResources().getDimension(R.dimen.dimen_40));
         //setTextSize单位为px
-        textView3.setTextSize(TypedValue.COMPLEX_UNIT_PX,getResources().getDimension(R.dimen.dimen_40));
+        textView3.setTextSize(TypedValue.COMPLEX_UNIT_PX, getResources().getDimension(R.dimen.dimen_40));
         textView1.setText(textView1.getText() + " 这是追加文本");
         //java代码调用颜色--setTextColor--直接获取
         textView1.setTextColor(getResources().getColor(R.color.purple_200));

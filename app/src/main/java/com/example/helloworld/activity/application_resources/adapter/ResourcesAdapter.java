@@ -9,13 +9,12 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.helloworld.R;
-import com.example.helloworld.activity.application_resources.ResourcesActivity;
 
 import java.util.Arrays;
 import java.util.List;
 
 /**
- * @Author:  Tianyu.Fu
+ * @Author: Tianyu.Fu
  * @CreateDate: 2022/8/19
  * @Description: This is ResourcesAdapter
  */
@@ -24,11 +23,11 @@ public class ResourcesAdapter extends RecyclerView.Adapter<ResourcesAdapter.Reso
 
 
     static class ResourcesViewHolder extends RecyclerView.ViewHolder {
-        TextView resource_item;
+        TextView resourceItem;
 
         ResourcesViewHolder(View view) {
             super(view);
-            resource_item = (TextView) view.findViewById(R.id.resources_item);
+            resourceItem = (TextView) view.findViewById(R.id.resources_item);
         }
     }
 
@@ -50,7 +49,7 @@ public class ResourcesAdapter extends RecyclerView.Adapter<ResourcesAdapter.Reso
     @Override
     public void onBindViewHolder(@NonNull ResourcesViewHolder holder, int position) {
         String str = mApples.get(position);
-        holder.resource_item.setText(str);
+        holder.resourceItem.setText(str);
     }
 
     @Override

@@ -62,7 +62,7 @@
             android:exported="false"
             android:label="Activity Lifecycle Test" />
         <activity
-            android:name=".activity.activity_life.TestActivityLifecycle_2"
+            android:name=".activity.activity_life.TestActivityLifecycle2"
             android:exported="false"
             android:label="Activity Lifecycle Test" />
         <activity
