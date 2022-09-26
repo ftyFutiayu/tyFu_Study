@@ -1,4 +1,4 @@
-package com.example.helloworld.activity.application_resources.adapter;
+package com.example.helloworld.activity.applicationresources.adapter;
 
 import android.view.LayoutInflater;
 import android.view.View;

@@ -21,6 +21,7 @@ import androidx.annotation.Nullable;
 /**
  * 自定义按钮类
  */
+@SuppressWarnings("checkstyle:StaticVariableName")
 public class SlideButton extends View {
 
     //状态改变监听
@@ -38,23 +39,24 @@ public class SlideButton extends View {
     private static final int CIRCLE_STROKE_WIDTH = 3;
 
     //椭圆边框颜色
-    private String StrokeLineColor = "#bebfc1";
+    private String strokeLineColor = "#bebfc1";
     //椭圆填充颜色
-    private String StrokeSolidColor = "#00ffffff";
+    private String strokeSolidColor = "#00ffffff";
     //圆形边框颜色
-    private String CircleStrokeColor = "#abacaf";
+    private String circleStrokeColor = "#abacaf";
     //圆形checked填充颜色
-    private String CircleCheckedColor = "#ff5555";
+    private String circleCheckedColor = "#ff5555";
     //圆形非checked填充颜色
-    private String CircleNoCheckedColor = "#bebfc1";
+    private String circleNoCheckedColor = "#bebfc1";
 
     //控件内边距
+
     private static int PADDING = 20;
     //移动的判定距离
     private static int MOVE_DISTANCE = 50;
 
     //圆的x轴圆心
-    private float circle_x;
+    private float circleX;
 
     //是否是大圆
     private boolean isBigCircle = false;
@@ -129,9 +131,7 @@ public class SlideButton extends View {
      * @param circleChecked             滑动圆选择状态下的填充颜色
      * @param circleNoCheckColor        滑动圆非选中状态下的填充颜色
      */
-    public void setBigCircleModel(int strokeLineColor, int strokeCheckedSolidColor,
-                                  int strokeNoCheckedSolidColor, int circleChecked,
-                                  int circleNoCheckColor) {
+    public void setBigCircleModel(int strokeLineColor, int strokeCheckedSolidColor, int strokeNoCheckedSolidColor, int circleChecked, int circleNoCheckColor) {
         isBigCircle = true;
         strokeLineColor_int = strokeLineColor;
         strokeCheckedSolidColor_int = strokeCheckedSolidColor;
@@ -158,9 +158,9 @@ public class SlideButton extends View {
     public void setChecked(boolean checked) {
         this.isChecked = checked;
         if (isChecked) {
-            circle_x = circleEndX;
+            circleX = circleEndX;
         } else {
-            circle_x = circleStartX;
+            circleX = circleStartX;
         }
         invalidate();
     }
@@ -225,9 +225,9 @@ public class SlideButton extends View {
         //内部圆的x轴终点坐标
         circleEndX = mWidth - circleStartX;
         if (isChecked) {
-            circle_x = circleEndX;
+            circleX = circleEndX;
         } else {
-            circle_x = circleStartX;
+            circleX = circleStartX;
         }
 
         //控件的中线
@@ -276,14 +276,14 @@ public class SlideButton extends View {
         } else {
             mPaint.setColor(circleNoCheckedColor_int);
         }
-        canvas.drawCircle(circle_x, centerY, circleRadiusNew, mPaint);
+        canvas.drawCircle(circleX, centerY, circleRadiusNew, mPaint);
 
         if (isBigCircle) {
             //画圆的边
             mPaint.setColor(circleStrokeColor_int);
             mPaint.setStyle(Paint.Style.STROKE);
             mPaint.setStrokeWidth(CIRCLE_STROKE_WIDTH);
-            canvas.drawCircle(circle_x, centerY, circleRadiusNew, mPaint);
+            canvas.drawCircle(circleX, centerY, circleRadiusNew, mPaint);
         }
     }
 
@@ -294,9 +294,9 @@ public class SlideButton extends View {
                 preX = event.getX();
                 isMove = false;
                 if (!isChecked) {
-                    circle_x = PADDING + strokeCircleRadius;
+                    circleX = PADDING + strokeCircleRadius;
                 } else {
-                    circle_x = mWidth - PADDING - strokeCircleRadius;
+                    circleX = mWidth - PADDING - strokeCircleRadius;
                 }
                 break;
             case MotionEvent.ACTION_MOVE:
@@ -304,36 +304,36 @@ public class SlideButton extends View {
                 if (Math.abs(move_x - preX) > MOVE_DISTANCE) {
                     isMove = true;
                     if (move_x < circleStartX) {
-                        circle_x = circleStartX;
+                        circleX = circleStartX;
                         isChecked = false;
                     } else if (move_x > circleEndX) {
-                        circle_x = circleEndX;
+                        circleX = circleEndX;
                         isChecked = true;
                     } else {
-                        circle_x = move_x;
+                        circleX = move_x;
                     }
                     invalidate();
                 }
                 break;
             case MotionEvent.ACTION_UP:
                 if (isMove) {
-                    if (circle_x >= centerX) {
+                    if (circleX >= centerX) {
                         //关闭(执行开启)
-                        mScroller.startScroll((int) circle_x, 0, (int) (circleEndX - circle_x), 0);
+                        mScroller.startScroll((int) circleX, 0, (int) (circleEndX - circleX), 0);
                         isChecked = true;
                     } else {
                         //开启（执行关闭）
-                        mScroller.startScroll((int) circle_x, 0, (int) (circleStartX - circle_x), 0);
+                        mScroller.startScroll((int) circleX, 0, (int) (circleStartX - circleX), 0);
                         isChecked = false;
                     }
                 } else {
                     if (!isChecked) {
                         //关闭(执行开启)
-                        mScroller.startScroll((int) circle_x, 0, (int) (circleEndX - circle_x), 0);
+                        mScroller.startScroll((int) circleX, 0, (int) (circleEndX - circleX), 0);
                         isChecked = true;
                     } else {
                         //开启（执行关闭）
-                        mScroller.startScroll((int) circle_x, 0, (int) (circleStartX - circle_x), 0);
+                        mScroller.startScroll((int) circleX, 0, (int) (circleStartX - circleX), 0);
                         isChecked = false;
                     }
                 }
@@ -342,6 +342,8 @@ public class SlideButton extends View {
                 }
                 invalidate();
                 break;
+            default:
+                break;
         }
         return super.onTouchEvent(event);
     }
@@ -349,7 +351,7 @@ public class SlideButton extends View {
     @Override
     public void computeScroll() {
         if (mScroller.computeScrollOffset()) {
-            circle_x = mScroller.getCurrX();
+            circleX = mScroller.getCurrX();
             invalidate();
         }
     }

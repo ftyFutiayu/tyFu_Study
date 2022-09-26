@@ -14,7 +14,7 @@ import androidx.fragment.app.Fragment;
 import com.example.helloworld.R;
 
 /**
- * @Author:  Tianyu.Fu
+ * @Author: Tianyu.Fu
  * @CreateDate: 2022/8/31
  * @Description: This is TestLifecycleLeftFragment'
  * Fragment生命周期 -- 左侧Fragment
@@ -39,7 +39,6 @@ public class TestLifecycleLeftFragment extends Fragment {
 
     /**
      * Fragment建立视图时调用
-     *
      */
     @Nullable
     @Override
@@ -51,6 +50,7 @@ public class TestLifecycleLeftFragment extends Fragment {
 
     /**
      * Activity创建后调用
+     *
      * @param savedInstanceState
      */
     @Override
@@ -62,7 +62,7 @@ public class TestLifecycleLeftFragment extends Fragment {
     @Override
     public void onStart() {
         super.onStart();
-        Log.i(TAG, "onStart: " + "--Fragment--"+ "test lifecycle");
+        Log.i(TAG, "onStart: " + "--Fragment--" + "test lifecycle");
     }
 
     @Override

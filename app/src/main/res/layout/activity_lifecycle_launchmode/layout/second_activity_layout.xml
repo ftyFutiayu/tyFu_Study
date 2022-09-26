@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity.second_activity.SecondActivity"
+    tools:context=".activity.secondactivity.SecondActivity"
     android:orientation="vertical">
 
     <Button

@@ -1,4 +1,4 @@
-package com.example.helloworld.activity.activity_launch_mode;
+package com.example.helloworld.activity.activitylaunchmode;
 
 import android.content.Intent;
 import android.os.Bundle;

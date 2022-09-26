@@ -1,4 +1,4 @@
-package com.example.helloworld.activity.count_down_timer;
+package com.example.helloworld.activity.countdowntimer;
 
 import androidx.appcompat.app.AppCompatActivity;
 

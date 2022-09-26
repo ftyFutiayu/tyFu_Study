@@ -13,17 +13,17 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.helloworld.R;
-import com.example.helloworld.activity.activity_launch_mode.LaunchModeActivity;
+import com.example.helloworld.activity.activitylaunchmode.LaunchModeActivity;
 import com.example.helloworld.activity.activity_life.TestActivityLifecycle_1;
-import com.example.helloworld.activity.application_resources.ResourcesActivity;
+import com.example.helloworld.activity.applicationresources.ResourcesActivity;
 import com.example.helloworld.activity.base.BaseActivity;
-import com.example.helloworld.activity.bottom_sheet.BottomSheetActivity;
+import com.example.helloworld.activity.bottomsheet.BottomSheetActivity;
 import com.example.helloworld.activity.broadcast.BestBroadcastTest;
-import com.example.helloworld.activity.count_down_timer.CountDownTimerActivity;
+import com.example.helloworld.activity.countdowntimer.CountDownTimerActivity;
 import com.example.helloworld.activity.fragment.FragmentActivity;
 import com.example.helloworld.activity.handler.HandlerPractiseActivity;
 import com.example.helloworld.activity.layout.LayoutDefaultActivity;
-import com.example.helloworld.activity.second_activity.SecondActivity;
+import com.example.helloworld.activity.secondactivity.SecondActivity;
 import com.example.helloworld.activity.ui.UIWidgetActivity;
 
 import java.util.ArrayList;
@@ -139,9 +139,9 @@ public class MainActivity extends BaseActivity {
     private void initData() {
         indexButtonNames = new ArrayList<>();
         indexButtonNames.add("To Activity 2"); //0
-        indexButtonNames.add("To Launch Mode"); //1
+        indexButtonNames.add("To Baidu"); //1
+        indexButtonNames.add("To Launch Mode"); //2
         indexButtonNames.add("Test Activity Lifecycle"); //2
-        indexButtonNames.add("To Baidu"); //3
         indexButtonNames.add("BottomSheet Behavior"); //4
         indexButtonNames.add("UI常用view控件"); //5
         indexButtonNames.add("Application Resources"); //6

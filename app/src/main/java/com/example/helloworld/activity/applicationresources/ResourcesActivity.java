@@ -1,4 +1,4 @@
-package com.example.helloworld.activity.application_resources;
+package com.example.helloworld.activity.applicationresources;
 
 import android.content.res.ColorStateList;
 import android.graphics.Bitmap;
@@ -13,7 +13,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.helloworld.R;
-import com.example.helloworld.activity.application_resources.adapter.ResourcesAdapter;
+import com.example.helloworld.activity.applicationresources.adapter.ResourcesAdapter;
 import com.example.helloworld.activity.base.BaseActivity;
 
 import java.util.ArrayList;

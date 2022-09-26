@@ -1,4 +1,4 @@
-package com.example.helloworld.activity.second_activity;
+package com.example.helloworld.activity.secondactivity;
 
 import androidx.annotation.NonNull;
 

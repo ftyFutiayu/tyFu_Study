@@ -1,4 +1,4 @@
-package com.example.helloworld.activity.bottom_sheet;
+package com.example.helloworld.activity.bottomsheet;
 
 import android.os.Bundle;
 import android.view.View;
