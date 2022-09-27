@@ -152,6 +152,16 @@
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
             </intent-filter>
         </receiver>
+        <!--自定义广播接收器-->
+        <receiver
+            android:name=".activity.broadcast.MyBroadcastReceiver"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="TODO">
+            <intent-filter>
+                <action android:name="com.example.broadcast.broadcasttext.MY_BROADCAST" />
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
     </application>
-
 </manifest>

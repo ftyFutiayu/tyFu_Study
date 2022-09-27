@@ -7,11 +7,11 @@
         <deviceKey>
           <Key>
             <type value="VIRTUAL_DEVICE_PATH" />
-            <value value="$USER_HOME$/.android/avd/XiaoMi5_API_30.avd" />
+            <value value="C:\Users\tyFu\.android\avd\HuaWei_Mate40_pro_API_30.avd" />
           </Key>
         </deviceKey>
       </Target>
     </targetSelectedWithDropDown>
-    <timeTargetWasSelectedWithDropDown value="2022-08-18T10:11:50.944641Z" />
+    <timeTargetWasSelectedWithDropDown value="2022-09-27T13:24:59.280191900Z" />
   </component>
 </project>
