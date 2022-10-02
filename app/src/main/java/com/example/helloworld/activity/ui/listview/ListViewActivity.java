@@ -13,8 +13,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ListViewActivity extends AppCompatActivity {
-    private List<Fruit> fruitList = new ArrayList<>();
+    private static final int FRUIT_NUMBER = 10;
 
+    private List<Fruit> fruitList = new ArrayList<>();
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,7 +32,7 @@ public class ListViewActivity extends AppCompatActivity {
      * 初始化水果数据
      */
     public void initFruits() {
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < FRUIT_NUMBER; i++) {
             Fruit apple = new Fruit("Apple", R.drawable.apple_pic);
             fruitList.add(apple);
             Fruit greenApple = new Fruit("GreenApple", R.drawable.green_apple_pic);

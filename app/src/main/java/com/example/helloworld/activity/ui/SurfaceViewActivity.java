@@ -42,6 +42,7 @@ public class SurfaceViewActivity extends AppCompatActivity implements
     private Timer timer;
     private TimerTask timerTask;
 
+    @SuppressWarnings("checkstyle:MagicNumber")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -96,8 +97,8 @@ public class SurfaceViewActivity extends AppCompatActivity implements
             //设置mediaPlayer属性
             mediaPlayer.setAudioAttributes(new AudioAttributes.Builder()
                     .setContentType(AudioAttributes.CONTENT_TYPE_MOVIE).build());
-            Uri uri = Uri.parse(ContentResolver.SCHEME_ANDROID_RESOURCE +
-                    "://" + getPackageName() + "/" + R.raw.video);
+            Uri uri = Uri.parse(ContentResolver.SCHEME_ANDROID_RESOURCE
+                    + "://" + getPackageName() + "/" + R.raw.video);
 
             try {
                 //MediaPlayer设置视频源
@@ -166,6 +167,7 @@ public class SurfaceViewActivity extends AppCompatActivity implements
     /**
      * 通过onTouchEvent()屏幕触摸事件实现RelativeLayout的隐藏与出现
      */
+    @SuppressWarnings("checkstyle:MagicNumber")
     @Override
     public boolean onTouchEvent(MotionEvent event) {
         //通过不同事件执行不同功能 getAction()获取事件类型
@@ -179,11 +181,11 @@ public class SurfaceViewActivity extends AppCompatActivity implements
                 //倒计时 3s后隐藏
                 CountDownTimer cdt = new CountDownTimer(3000, 1000) {
                     //计时器计时时
+                    @SuppressWarnings("checkstyle:Regexp")
                     @Override
                     public void onTick(long l) {
                         System.out.println(l);
                     }
-
                     //计时器结束时
                     @Override
                     public void onFinish() {

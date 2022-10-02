@@ -69,12 +69,12 @@
             android:label="Bottom Sheet Demo" />
 
         <activity
-            android:name=".activity.activity_life.TestActivityLifecycle_1"
+            android:name=".activity.activitylife.TestActivityLifecycle_1"
             android:exported="false"
             android:label="Activity Lifecycle Test" />
 
         <activity
-            android:name=".activity.activity_life.TestActivityLifecycle2"
+            android:name=".activity.activitylife.TestActivityLifecycle2"
             android:exported="false"
             android:label="Activity Lifecycle Test" />
 

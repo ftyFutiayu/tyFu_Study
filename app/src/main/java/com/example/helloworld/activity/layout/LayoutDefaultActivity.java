@@ -31,6 +31,12 @@ import com.example.helloworld.controller.ActivityController;
  * Layout 学习 创建pilot默认UI布局
  */
 public class LayoutDefaultActivity extends BaseActivity implements View.OnClickListener {
+    //当前类常数
+    private static final int POP_WINDOW_WIDTH = 400;
+    private static final int POP_WINDOW_HEIGHT = 400;
+    private static final int POP_WINDOW_VIEW_HEIGHT = 10;
+    private static final int POP_WINDOW_X = 200;
+    private static final int POP_WINDOW_Y = 250;
 
     private static final String TAG = "LayoutDefaultActivity";
 
@@ -143,11 +149,11 @@ public class LayoutDefaultActivity extends BaseActivity implements View.OnClickL
                         Color.parseColor("#cccccc")); //按钮没有被选中颜色
 
                 //初始化PopWindows 将view传入
-                PopupWindow myPop = new PopupWindow(view, 400, 200);
+                PopupWindow myPop = new PopupWindow(view, POP_WINDOW_WIDTH, POP_WINDOW_HEIGHT);
                 myPop.setContentView(view);
                 //基本设置
                 myPop.setBackgroundDrawable(new ColorDrawable(0xFFFFFFFF));
-                myPop.setElevation(10); //设置弹出动画高度
+                myPop.setElevation(POP_WINDOW_VIEW_HEIGHT); //设置弹出动画高度
                 myPop.setOutsideTouchable(true);
                 // 如果不设置，在PopupWindow弹出的时候，点击返回键将直接退出Activity
                 // 设置之后，在PopupWindow弹出的时候，点击返回键不会直接退出Activity而是关闭当前弹出的PopupWindow
@@ -156,8 +162,8 @@ public class LayoutDefaultActivity extends BaseActivity implements View.OnClickL
                 //pop弹窗锚点选择为设置按钮 即坐标原点
                 myPop.showAtLocation(settingBtn,
                         Gravity.BOTTOM,
-                        200,
-                        250);
+                        POP_WINDOW_X,
+                        POP_WINDOW_Y);
                 Log.i(TAG, "onClick: myPop");
                 break;
             default:

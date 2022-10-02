@@ -28,6 +28,7 @@ public class ResourcesActivity extends BaseActivity {
 
     private static final String TAG = "ResourcesActivity";
 
+    private static final int TEXT_VIEW_SIZE = 18;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -73,7 +74,7 @@ public class ResourcesActivity extends BaseActivity {
         java代码中设置尺寸和颜色
          */
         //java代码调用尺寸--setTextSize(数字)默认的size 单位为sp
-        textView1.setTextSize(18);
+        textView1.setTextSize(TEXT_VIEW_SIZE);
         textView2.setTextSize(getResources().getDimension(R.dimen.dimen_40));
         //setTextSize单位为px
         textView3.setTextSize(TypedValue.COMPLEX_UNIT_PX, getResources().getDimension(R.dimen.dimen_40));

@@ -1,4 +1,4 @@
-package com.example.helloworld.activity.activity_life;
+package com.example.helloworld.activity.activitylife;
 
 import androidx.appcompat.app.AlertDialog;
 
@@ -17,6 +17,7 @@ import com.example.helloworld.controller.ActivityController;
 /**
  * 探究Activity 生命周期
  */
+@SuppressWarnings("checkstyle:TypeName")
 public class TestActivityLifecycle_1 extends BaseActivity implements View.OnClickListener {
     private static final String TAG = "TestActivityLifecycle_1";
 
@@ -31,8 +32,8 @@ public class TestActivityLifecycle_1 extends BaseActivity implements View.OnClic
         buttonAlertdialog.setOnClickListener(this);
         Button buttonToast = findViewById(R.id.btn_textactivity1_toast);
         buttonToast.setOnClickListener(this);
-        Button button_exit = findViewById(R.id.btn_exit_app);
-        button_exit.setOnClickListener(this);
+        Button buttonExit = findViewById(R.id.btn_exit_app);
+        buttonExit.setOnClickListener(this);
     }
 
     @Override
@@ -42,7 +43,7 @@ public class TestActivityLifecycle_1 extends BaseActivity implements View.OnClic
             case R.id.btn_textactivity1_to_test_activity_lifecycle_2:
                 intent = new Intent(TestActivityLifecycle_1.this, TestActivityLifecycle2.class);
                 startActivity(intent);
-              break;
+                break;
             case R.id.btn_textactivity1_normal_alertdialog:
                 AlertDialog.Builder dialog = new AlertDialog.Builder(TestActivityLifecycle_1.this);
                 dialog.setTitle("This is a alertDialog");

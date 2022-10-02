@@ -38,6 +38,7 @@ public class UIWidgetActivity extends AppCompatActivity implements View.OnClickL
 
     private int imageState = 2;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -54,10 +55,10 @@ public class UIWidgetActivity extends AppCompatActivity implements View.OnClickL
         progressDialog.setOnClickListener(this);
         Button surface = findViewById(R.id.button_ui_widget_surface_view);
         surface.setOnClickListener(this);
-        Button button_ui_widget_listview = findViewById(R.id.button_ui_widget_listview);
-        button_ui_widget_listview.setOnClickListener(this);
-        Button button_ui_widget_recycleview = findViewById(R.id.button_ui_widget_recycleview);
-        button_ui_widget_recycleview.setOnClickListener(this);
+        Button buttonUiWidgetListview = findViewById(R.id.button_ui_widget_listview);
+        buttonUiWidgetListview.setOnClickListener(this);
+        Button buttonUiWidgetRecycleview = findViewById(R.id.button_ui_widget_recycleview);
+        buttonUiWidgetRecycleview.setOnClickListener(this);
         editText = findViewById(R.id.edit_text_ui_widget);
         progressBar = findViewById(R.id.progress_bar_ui_widget);
         imageView = findViewById(R.id.image_view_ui_widget);
@@ -66,6 +67,7 @@ public class UIWidgetActivity extends AppCompatActivity implements View.OnClickL
     /**
      * Button点击事件
      */
+    @SuppressWarnings("checkstyle:MagicNumber")
     @Override
     public void onClick(View view) {
         switch (view.getId()) {
@@ -124,7 +126,7 @@ public class UIWidgetActivity extends AppCompatActivity implements View.OnClickL
         dialog.setCancelable(false);
         //默认不显示错误提示信息
         //初始化Dialog中Button、edittext、hiddenTextView
-        Button dialog_check = view.findViewById(R.id.dialog_check);
+        Button dialogCheck = view.findViewById(R.id.dialog_check);
         EditText dialogEditText = view.findViewById(R.id.dialog_edittext);
         TextView hiddenTextView = view.findViewById(R.id.dialog_hidden_text);
         //错误提示信息先隐藏
@@ -142,6 +144,7 @@ public class UIWidgetActivity extends AppCompatActivity implements View.OnClickL
 
             }
 
+            @SuppressWarnings("checkstyle:MagicNumber")
             @SuppressLint("ResourceAsColor")
             @Override
             public void afterTextChanged(Editable editable) {
@@ -149,21 +152,19 @@ public class UIWidgetActivity extends AppCompatActivity implements View.OnClickL
                 int curTextLen = editable.length();
                 //输入小于三位数无法点击按钮
                 if (curTextLen < 3) {
-                    dialog_check.setBackgroundColor(R.color.gray);
-                    dialog_check.setEnabled(false);
-                }
-                //输入三位数可以点击按钮
-                else if (curTextLen == 3) {
-                    dialog_check.setBackgroundColor(R.color.white);
-                    dialog_check.setEnabled(true);
-                }
-                //输入四位数自动判断当前密码是否正确
-                else if (curTextLen == Constant.PASSWORD.getIndex().length()) {
+                    dialogCheck.setBackgroundColor(R.color.gray);
+                    dialogCheck.setEnabled(false);
+                } else if (curTextLen == 3) {
+                    //输入三位数可以点击按钮
+                    dialogCheck.setBackgroundColor(R.color.white);
+                    dialogCheck.setEnabled(true);
+                } else if (curTextLen == Constant.PASSWORD.getIndex().length()) {
+                    //输入四位数自动判断当前密码是否正确
                     boolean isPasswordTrue = checkPassword(dialogEditText.getText().toString());
                     //只有密码正确点击Send才能退出dialog
                     if (isPasswordTrue) {
                         hiddenTextView.setVisibility(View.INVISIBLE);
-                        dialog_check.setOnClickListener(new View.OnClickListener() {
+                        dialogCheck.setOnClickListener(new View.OnClickListener() {
                             @Override
                             public void onClick(View view) {
                                 getToast(UIWidgetActivity.this, "恭喜你密码正确").show();
@@ -173,19 +174,18 @@ public class UIWidgetActivity extends AppCompatActivity implements View.OnClickL
                     } else {
                         hiddenTextView.setVisibility(View.VISIBLE);
                         hiddenTextView.setText("密码错误");
-                        dialog_check.setOnClickListener(new View.OnClickListener() {
+                        dialogCheck.setOnClickListener(new View.OnClickListener() {
                             @Override
                             public void onClick(View view) {
                                 getToast(UIWidgetActivity.this, "密码错误").show();
                             }
                         });
                     }
-                }
-                //密码长度不对或密码错误： 显示红色文字 点击按钮弹窗密码错误
-                else {
+                } else {
+                    //密码长度不对或密码错误： 显示红色文字 点击按钮弹窗密码错误
                     hiddenTextView.setText("密码格式错误");
                     hiddenTextView.setVisibility(View.VISIBLE);
-                    dialog_check.setOnClickListener(new View.OnClickListener() {
+                    dialogCheck.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View view) {
                             getToast(UIWidgetActivity.this, "密码格式错误").show();

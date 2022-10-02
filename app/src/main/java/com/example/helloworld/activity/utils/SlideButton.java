@@ -82,12 +82,19 @@ public class SlideButton extends View {
     private int centerY;
     private float preX = 0;
     private boolean isMove;
+    @SuppressWarnings("checkstyle:MemberName")
     private int view_height_int;
+    @SuppressWarnings("checkstyle:MemberName")
     private int strokeLineColor_int;
+    @SuppressWarnings("checkstyle:MemberName")
     private int strokeCheckedSolidColor_int;
+    @SuppressWarnings("checkstyle:MemberName")
     private int strokeNoCheckedSolidColor_int;
+    @SuppressWarnings("checkstyle:MemberName")
     private int circleStrokeColor_int;
+    @SuppressWarnings("checkstyle:MemberName")
     private int circleChecked_int;
+    @SuppressWarnings("checkstyle:MemberName")
     private int circleNoCheckedColor_int;
 
     public SlideButton(Context context) {
@@ -131,7 +138,8 @@ public class SlideButton extends View {
      * @param circleChecked             滑动圆选择状态下的填充颜色
      * @param circleNoCheckColor        滑动圆非选中状态下的填充颜色
      */
-    public void setBigCircleModel(int strokeLineColor, int strokeCheckedSolidColor, int strokeNoCheckedSolidColor, int circleChecked, int circleNoCheckColor) {
+    public void setBigCircleModel(int strokeLineColor, int strokeCheckedSolidColor, int strokeNoCheckedSolidColor,
+                                  int circleChecked, int circleNoCheckColor) {
         isBigCircle = true;
         strokeLineColor_int = strokeLineColor;
         strokeCheckedSolidColor_int = strokeCheckedSolidColor;
@@ -197,6 +205,7 @@ public class SlideButton extends View {
         setMeasuredDimension(widthSize, heightSize);
     }
 
+    @SuppressWarnings("checkstyle:MagicNumber")
     @Override
     protected void onSizeChanged(int w, int h, int oldw, int oldh) {
         super.onSizeChanged(w, h, oldw, oldh);
@@ -287,6 +296,7 @@ public class SlideButton extends View {
         }
     }
 
+    @SuppressWarnings("checkstyle:LocalVariableName")
     @Override
     public boolean onTouchEvent(MotionEvent event) {
         switch (event.getAction()) {

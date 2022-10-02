@@ -1,4 +1,4 @@
-package com.example.helloworld.activity.activity_life;
+package com.example.helloworld.activity.activitylife;
 
 import android.os.Bundle;
 import android.util.Log;

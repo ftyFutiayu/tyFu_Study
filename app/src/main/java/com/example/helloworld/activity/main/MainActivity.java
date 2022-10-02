@@ -14,7 +14,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.helloworld.R;
 import com.example.helloworld.activity.activitylaunchmode.LaunchModeActivity;
-import com.example.helloworld.activity.activity_life.TestActivityLifecycle_1;
+import com.example.helloworld.activity.activitylife.TestActivityLifecycle_1;
 import com.example.helloworld.activity.applicationresources.ResourcesActivity;
 import com.example.helloworld.activity.base.BaseActivity;
 import com.example.helloworld.activity.bottomsheet.BottomSheetActivity;

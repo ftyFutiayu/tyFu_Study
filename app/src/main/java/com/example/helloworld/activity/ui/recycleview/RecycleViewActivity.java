@@ -17,13 +17,18 @@ import java.util.Random;
 public class RecycleViewActivity extends AppCompatActivity {
     private List<Fruit> fruits = new ArrayList<>();
 
+    private static final int FRUIT_NUMBER = 10;
+    private static final int FRUIT_NAME_LENGTH = 20;
+
+    private static final int STAGGERED_GRID_LAYOUT_COLUMNS = 3;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.recycle_view_layout);
         initFruits();
         RecyclerView recyclerView = (RecyclerView) findViewById(R.id.ui_widget_recycleview);
-        StaggeredGridLayoutManager manager = new StaggeredGridLayoutManager(3, StaggeredGridLayoutManager.VERTICAL);
+        StaggeredGridLayoutManager manager = new StaggeredGridLayoutManager(STAGGERED_GRID_LAYOUT_COLUMNS, StaggeredGridLayoutManager.VERTICAL);
         recyclerView.setLayoutManager(manager);
         FruitRecycleViewAdapter adapter = new FruitRecycleViewAdapter(fruits);
         recyclerView.setAdapter(adapter);
@@ -33,7 +38,7 @@ public class RecycleViewActivity extends AppCompatActivity {
      * 初始化水果数据
      */
     public void initFruits() {
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < FRUIT_NUMBER; i++) {
             Fruit apple = new Fruit(getRandomLengthName("Apple"), R.drawable.apple_pic);
             fruits.add(apple);
             Fruit greenApple = new Fruit(getRandomLengthName("GreenApple"), R.drawable.green_apple_pic);
@@ -51,7 +56,7 @@ public class RecycleViewActivity extends AppCompatActivity {
 
     private String getRandomLengthName(String name) {
         Random random = new Random();
-        int length = random.nextInt(20) + 1;
+        int length = random.nextInt(FRUIT_NAME_LENGTH) + 1;
         StringBuilder stringBuilder = new StringBuilder();
         for (int i = 0; i < length; i++) {
             stringBuilder.append(name);
