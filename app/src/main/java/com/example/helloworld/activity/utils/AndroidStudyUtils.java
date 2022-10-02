@@ -3,7 +3,7 @@ package com.example.helloworld.activity.utils;
 import android.view.View;
 
 /**
- * @Author: zee001-w
+ * @Author: tianyu.Fu
  * @CreateDate: 2022/8/29
  * @Description: This is AndroidStudyUtils 计算相关工具类
  */

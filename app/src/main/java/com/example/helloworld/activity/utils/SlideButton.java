@@ -1,7 +1,7 @@
 package com.example.helloworld.activity.utils;
 
 /**
- * @Author: zee001-w
+ * @Author: tianyu.Fu
  * @CreateDate: 2022/8/29
  * @Description: This is SlideButton
  */

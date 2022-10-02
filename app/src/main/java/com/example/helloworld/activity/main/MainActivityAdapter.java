@@ -13,7 +13,7 @@ import com.example.helloworld.R;
 import java.util.List;
 
 /**
- * @Author: zee001-w
+ * @Author: tianyu.Fu
  * @CreateDate: 2022/8/30
  * @Description: This is MainActivityAdapter 适配器
  * 将首页按钮重构为RecyclerView
